@@ -3,6 +3,8 @@
 
 School of Cyber science and technology  - 国家网络安全学院
 
+#### About files
+
 - 关于教材：
 
   - 中文教材使用机械工业出版社黑皮书：《操作系统概念-国际版-9th》
@@ -19,4 +21,8 @@ School of Cyber science and technology  - 国家网络安全学院
   - 两本教材的解答
   - 部分编程作业
   - 课程理论作业因老师而异，解答不提供
+
+#### License
+
+I also think it is still under consideration. Anyone know which is suitable?
 
