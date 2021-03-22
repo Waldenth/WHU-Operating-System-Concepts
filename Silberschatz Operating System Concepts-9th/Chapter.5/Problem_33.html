@@ -1,0 +1,6 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>The solution for the previous exercise will be correct under both conditions. It may suffer from a problem in which if a process wants to get a signal and if another process already in signal state, then the first process will prevail in waiting state.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>When the second process leaves the monitor from the signaling state, then the first process will progress forward to the signaling state.</p> <p>The first process will wait to get into the signaling state else it will wait for another condition.</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>A process will follow the while loop when it is in the wait state and it is replaced by ‘if’ condition if the process is ready to move in to the signaling state.</p> <p>Therefore, a process will be in either of the following state.</p> <p>• Signal and wait: First process either waits until second process leaves the monitor or waits for another condition.</p> <p>• Signal and continue: Second process either waits until the first process leaves the monitor or waits for another condition.</p></div>

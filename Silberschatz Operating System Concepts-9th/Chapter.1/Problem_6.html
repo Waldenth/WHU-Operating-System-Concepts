@@ -1,0 +1,20 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>The privileged instructions must execute in the kernel mode only. These instructions cannot execute in the user mode. The instruction which switches to the kernel mode is the privileged instructions.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p> <b>a. </b> </p> <p>The Set value of timer instruction is privileged. This instruction is interfaced with the kernel. If the timer goes off, then the task will stop, and the kernel starts a new task.</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p> <b>b. </b> </p> <p>The Read the clock instruction is not privileged. This instruction is not interfaced with the kernel. The kernel does not read the clock value.</p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p> <b>c. </b> </p> <p>The Clear memory instruction is privileged. The kernel checks whether a process needs to clear the memory and if the process wants to clear the memory, then the kernel uses this instruction.</p> </div>
+<h2>Step-5</h2>
+<div class="answer"> <p> <b>d. </b> </p> <p>The Issue a trap instruction is not privileged. The trap instruction issued in the user mode but not in the kernel mode.</p> </div>
+<h2>Step-6</h2>
+<div class="answer"> <p> <b>e. </b> </p> <p>The Turn off interrupt’s instruction is privileged. This instruction is interfaced with the kernel. The kernel provides the instruction to maintain the flow of control of the processes.</p> </div>
+<h2>Step-7</h2>
+<div class="answer"> <p> <b>f. </b> </p> <p>The Modify entries in device-status table instruction are privileged. These instructions are interfaced with the kernel mode. The instructions which must not modify are interfaced with the kernel mode.</p> </div>
+<h2>Step-8</h2>
+<div class="answer"> <p> <b>g. </b> </p> <p>The Switch from user to kernel mode instructions is privileged instruction. The system must transition from user to kernel model to accomplish the user request. At the time of system start the hardware starts in the kernel mode and then run the user applications in the user mode.</p> </div>
+<h2>Step-9</h2>
+<div class="answer"> <p> <b>h.</b> </p> <p>Access I/O device instructions are privileged. These instructions execute in the kernel mode. The kernel mode protects these instructions against the attempts by the user to modify these instructions. The instructions which must not modify are interfaced with the kernel mode.</p> </div>
+<h2>Step-10</h2>
+<div class="answer"> <p> <b>Privileged instructions and Un-privileged instructions are tabulated as below:</b> </p> <table border="1" style="border-collapse:collapse;"> <tr> <td> <p> <b>S.no</b> </p> </td> <td> <p> <b>Instruction</b> </p> </td> <td> <p> <b>Type</b> </p> </td> </tr> <tr> <td> <p>a.</p> </td> <td> <p>Set the Value of timer</p> </td> <td> <p>Privileged</p> </td> </tr> <tr> <td> <p>b.</p> </td> <td> <p>Read the clock</p> </td> <td> <p>Un-Privileged</p> </td> </tr> <tr> <td> <p>c.</p> </td> <td> <p>Clear memory</p> </td> <td> <p>Privileged</p> </td> </tr> <tr> <td> <p>d.</p> </td> <td> <p>Issue a trap instruction</p> </td> <td> <p>Un-Privileged</p> </td> </tr> <tr> <td> <p>e.</p> </td> <td> <p>Turn off interrupts</p> </td> <td> <p>Privileged</p> </td> </tr> <tr> <td> <p>f.</p> </td> <td> <p>Modify entries in device-status table</p> </td> <td> <p>Privileged</p> </td> </tr> <tr> <td> <p>g.</p> </td> <td> <p>Switch from user to kernel mode</p> </td> <td> <p>Privileged</p> </td> </tr> <tr> <td> <p>h.</p> </td> <td> <p>Access I/O device</p> </td> <td> <p>Privileged</p> </td> </tr> </table></div>

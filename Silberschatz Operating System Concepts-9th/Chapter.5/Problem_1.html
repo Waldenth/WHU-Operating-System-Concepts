@@ -1,0 +1,12 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>Critical section problems are often solved by preventing interrupts while shared variable is being modified.This process is simple to use in uniprocessor.But in case of multiprocessor, this is not feasible solution because disabling interrupts on a multiprocessor is most time consuming as the message is passed to all processors. Each time, a process needs to acquire a lock in the following way before entering into the critical section.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>do</p> <p>{</p> <p>acquire lcok</p> <p> critical section</p> <p>release lock</p> <p> remainder section</p> <p>}while(TRUE);</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>This message passing technique delays getting entry into critical section. So, the system efficiency decreases. If the interrupts need to be updated by the system clock, then system clock is affected in updating the clock cycles by frequent interrupts being </p> <p>occurred.</p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p> <b>Minimization of interrupts:</b> </p> <p>Special hardware instructions like TestAndSet() and swap() instructions can be used to test and modify the content of a word or to swap the contents of two words automatically. By using these instructions, the affect can be minimized.</p> </div>
+<h2>Step-5</h2>
+<div class="answer"> <p>Following is the way to implement the TestAndSet() instruction</p> <p>do</p> <p>{</p> <p>While(TestAndSet(&lock));</p> <p> lock=FALSE;</p> <p>}while(TRUE);</p> </div>
+<h2>Step-6</h2>
+<div class="answer"> <p>Similarly ,the swap() instruction operates on the contents of two words where lock is initialized to FALSE and key is Boolean variable to each process.</p> <p>do</p> <p>{</p> <p>key=TRUE;</p> <p>while(key==TRUE)</p> <p> Swap(&lock,&key);</p> <p> //critical section</p> <p> lock=FALSE;</p> <p>}while(TRUE);</p></div>

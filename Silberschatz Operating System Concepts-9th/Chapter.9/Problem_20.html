@@ -1,0 +1,4 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>It is clearly stated that there exists a process with five user-level threads mapped to kernel threads in one to one mapping which means that one user thread is mapped to one kernel thread.</p> <p>When a page fault occurs, the page must be blocked while waiting for the page to bring into main memory from the disk.</p> <p>Therefore, only one thread which is accessing the stack is blocked. Remaining threads will not wait for the faulting page because, in one to one mapping each user level thread has a kernel level thread which has separate stacks for its operation.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>Hence, when a page fault occurs in one thread, the process requesting the page fault must block while waiting for the page to be brought from disk into physical memory, but it does not affect the other user threads.</p></div>

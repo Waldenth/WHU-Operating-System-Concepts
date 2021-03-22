@@ -1,0 +1,38 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>2481-9-9E SA: 8683</p> <p> SR: 4478</p> <p>________________________________________________________________________</p> <p> <b>LRU (Least Recently Used) page replacement:</b> </p> <p>In this, we can replace the page that has not been used for the longest period of time. </p> <p>Given reference string is,1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6.</p> <p> <b>LRU</b> <b>1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b></p> <p> <b>For Frame=1 </b> </p> <p>1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</p> <p> <b>Page faults = 20</b> </p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=2 </b>1 1 3 3 2 2 5 5 2 2 2 7 7 3 3 1 3 3</p> <p> 2 2 4 4 1 1 6 6 1 3 3 6 6 2 2 2 6</p> <p> <b>Page faults =18</b> </p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=3 </b>1 1 1 4 4 5 5 5 1 1 7 7 2 2 2</p> <p> 2 2 2 2 2 6 6 6 3 3 3 3 3 3</p> <p> 3 3 1 1 1 2 2 2 2 6 6 1 6</p> <p> <b>Page faults =15</b> </p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=4 </b>1 1 1 1 1 1 1 1 6 6 </p> <p> 2 2 2 2 2 2 2 2 2 </p> <p> 3 3 5 5 3 3 3 3 </p> <p> 4 4 6 6 7 7 1</p> <p> <b>Page faults =10</b> </p> </div>
+<h2>Step-5</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=5 </b>1 1 1 1 1 1 1 1 </p> <p> 2 2 2 2 2 2 2 </p> <p> 3 3 3 6 6 6 </p> <p> 4 4 4 3 3 </p> <p> 5 5 5 7</p> <p> <b>Page faults =8</b> </p> </div>
+<h2>Step-6</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=6 </b>1 1 1 1 1 1 1 </p> <p> 2 2 2 2 2 2 </p> <p> 3 3 3 3 3 </p> <p> 4 4 4 7 </p> <p> 5 5 5</p> <p> 6 6</p> <p> <b>Page faults =7</b> </p> </div>
+<h2>Step-7</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=7 </b>1 1 1 1 1 1 1 </p> <p> 2 2 2 2 2 2 </p> <p> 3 3 3 3 3 </p> <p> 4 4 4 4 </p> <p> 5 5 5</p> <p> 6 6</p> <p> 7</p> <p> <b>Page faults =7</b> </p> <p> <b>FIFO(First In First Out) page replacement : </b>In this, we can replace the page that has brought into memory first among the others. </p> <p>Given reference string is, 1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6.</p> <p> <b>FIFO</b> <b>1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b></p> <p> <b>For Frame=1 </b> </p> <p>1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</p> <p> <b>Page faults = 20</b> </p> </div>
+<h2>Step-8</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=2 </b>1 1 3 3 2 2 5 5 2 2 3 3 6 6 2 2 3 6</p> <p> 2 2 4 4 1 1 6 6 1 1 7 7 3 3 1 1 1</p> <p> <b>Page faults =18</b> </p> </div>
+<h2>Step-9</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=3 </b>1 1 1 4 4 4 6 6 6 3 3 3 2 2 2 6</p> <p> 2 2 2 1 1 1 2 2 2 7 7 7 1 1 1 </p> <p> 3 3 3 5 5 5 1 1 1 6 6 6 3 3 </p> <p> <b>Page faults =16</b> </p> </div>
+<h2>Step-10</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=4 </b>1 1 1 1 5 5 5 5 3 3 3 3 1 1 </p> <p> 2 2 2 2 6 6 6 6 7 7 7 7 3 </p> <p> 3 3 3 3 2 2 2 2 6 6 6 6 </p> <p> 4 4 4 4 1 1 1 1 2 2 2</p> <p> <b>Page faults =14</b> </p> </div>
+<h2>Step-11</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=5 </b>1 1 1 1 1 6 6 6 6 6 </p> <p> 2 2 2 2 2 1 1 1 1 </p> <p> 3 3 3 3 3 2 2 2 </p> <p> 4 4 4 4 4 3 3 </p> <p> 5 5 5 5 5 7 </p> <p> <b>Page faults =10</b> </p> </div>
+<h2>Step-12</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=6 </b>1 1 1 1 1 1 7 7 7 7 </p> <p> 2 2 2 2 2 2 1 1 1 </p> <p> 3 3 3 3 3 3 2 2 </p> <p> 4 4 4 4 4 4 3</p> <p> 5 5 5 5 5 5</p> <p> 6 6 6 6 6</p> <p> <b>Page faults =10</b> </p> </div>
+<h2>Step-13</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=7 </b>1 1 1 1 1 1 1 </p> <p> 2 2 2 2 2 2 </p> <p> 3 3 3 3 3 </p> <p> 4 4 4 4 </p> <p> 5 5 5</p> <p> 6 6</p> <p> 7</p> <p> <b>Page faults =7</b> </p> <p> <b>Optimal page replacement: </b>In this, we can replace the page that will not be used for the longest period of time. </p> <p>Given reference string is,1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6.</p> <p> <b>Optimal</b> </p> <p> <b>1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b></p> <p> <b>For Frame=1 </b> </p> <p>1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</p> <p> <b>Page faults = 20</b> </p> </div>
+<h2>Step-14</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=2 </b>1 1 3 4 1 5 6 1 3 3 3 3 1 3 3</p> <p> 2 2 2 2 2 2 2 2 7 6 2 2 2 6</p> <p> <b>Page faults =15</b> </p> </div>
+<h2>Step-15</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=3 </b>1 1 1 1 1 1 3 3 3 3 6</p> <p> 2 2 2 2 2 2 7 2 2 2</p> <p> 3 4 5 6 6 6 6 1 1</p> <p> <b>Page faults =11</b> </p> </div>
+<h2>Step-16</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=4 </b>1 1 1 1 1 1 7 1 </p> <p> 2 2 2 2 2 2 2 </p> <p> 3 3 3 3 3 3 </p> <p> 4 5 6 6 6</p> <p> <b>Page faults =8</b> </p> </div>
+<h2>Step-17</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=5 </b>1 1 1 1 1 1 1 </p> <p> 2 2 2 2 2 2 </p> <p> 3 3 3 3 3 </p> <p> 4 4 6 6 </p> <p> 5 5 7</p> <p> <b>Page faults =7</b> </p> </div>
+<h2>Step-18</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=6 </b>1 1 1 1 1 1 1 </p> <p> 2 2 2 2 2 2 </p> <p> 3 3 3 3 3 </p> <p> 4 4 4 7 </p> <p> 5 5 5</p> <p> 6 6</p> <p> <b>Page faults =7</b> </p> </div>
+<h2>Step-19</h2>
+<div class="answer"> <p> <b>Ref. string 1 2 3 4 2 1 5 6 2 1 2 3 7 6 3 2 1 2 3 6</b> </p> <p> <b>For frame=7 </b>1 1 1 1 1 1 1 </p> <p> 2 2 2 2 2 2 </p> <p> 3 3 3 3 3 </p> <p> 4 4 4 4 </p> <p> 5 5 5</p> <p> 6 6</p> <p> 7</p> <p> <b>Page faults =7</b> </p> <p> <b>Summary</b> :</p> <table border="1" style="border-collapse:collapse;"> <tr> <td> <p> <b>Number of Frames</b> </p> </td> <td> <p> <b>LRU</b> </p> </td> <td> <p> <b>FIFO</b> </p> </td> <td> <p> <b>Optimal</b> </p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>20</p> </td> <td> <p>20</p> </td> <td> <p>20</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>18</p> </td> <td> <p>18</p> </td> <td> <p>15</p> </td> </tr> <tr> <td> <p>3</p> </td> <td> <p>15</p> </td> <td> <p>16</p> </td> <td> <p>11</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>10</p> </td> <td> <p>14</p> </td> <td> <p>8</p> </td> </tr> <tr> <td> <p>5</p> </td> <td> <p>8</p> </td> <td> <p>10</p> </td> <td> <p>7</p> </td> </tr> <tr> <td> <p>6</p> </td> <td> <p>7</p> </td> <td> <p>10</p> </td> <td> <p>7</p> </td> </tr> <tr> <td> <p>7</p> </td> <td> <p>7</p> </td> <td> <p>7</p> </td> <td> <p>7</p> </td> </tr> </table></div>

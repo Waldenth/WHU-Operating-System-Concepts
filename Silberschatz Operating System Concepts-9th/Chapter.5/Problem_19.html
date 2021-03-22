@@ -1,0 +1,8 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>• Locks are basically used to destroy interrupts in multi-threaded systems. Locks prevent threads from entering a deadlock state. In the given piece of code, locks are used to overkill the interrupts. </p> <p>• Before going beyond, how locks are created or occupied should be known. A lock usually requires a system call for performing context switch when one or two threads in a program tend to sleep. </p> <p>• The thread then raises a request to acquire a lock; in case the lock is unavailable the process is looped up with another context switch consequently. </p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>• In the given piece of code, the atomic integer updates the variable allocated for ‘hits’ to ensure the system does not exceeds the race condition on hits. </p> <p>• The condition of achieving no race condition on hits can only be achieved if the process call is not interrupted by Kernel. </p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>In the first approach it can be seen the race condition being applied on hits. The race condition is successfully shown by “hits++;” line. Hence, this is not the efficient approach among the two.</p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p>In the second approach, no race condition is noticed. Hence, the second approach is more efficient as compared to the first approach.</p></div>

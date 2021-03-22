@@ -1,0 +1,8 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>A <b>hard real time</b> system is one in which a process is serviced within a given deadline or time. </p> <p>The performance of the hard real time systems is affected by the interrupt latency and dispatch latency.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p> <b>Interrupt latency</b> is the amount of time between the occurrence of the interrupt to the CPU and the first respond of the CPU to the interrupt.</p> <p>For a hard real time system, Interrupt should be bounded as the CPU has to first complete the currently running instruction, save its state and then the interrupt will be serviced by ISR (Interrupt Service routine) which will check what type of interrupt has been occurred.</p> <p>It is very important in real operating system to reduce the interrupt latency because if interrupt latency is reduced, it will be ensured that the real time system get immediate attention. </p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p> <b>Dispatch latency</b> is the amount of time required for the scheduler to stop currently running process and start another.</p> <p>It must be bounded with hard real time system because preemption is needed for a current process to be stopped, save its state and then the CPU will be assigned to a high priority process immediately. To service it within in a given deadline, immediate retrieval to the CPU is necessary for real time system to reduce dispatch latency. </p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p>So, minimization of the interrupt and dispatch latency should be done for ensuring that all the tasks in the real time need proper attention. </p> <p>Therefore, both are necessary to be bounded in hard real time system.</p></div>

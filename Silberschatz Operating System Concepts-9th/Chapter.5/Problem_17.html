@@ -1,0 +1,8 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>A lock that makes threads of a process enter into wait condition, while searching for availability of desired lock is known as a <b>spinlock</b>. </p> <p> <b>Mutual exclusion (mutex):</b> When one process lies in its critical section, and the other process wanted to enter its critical section, then it cannot enter.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>In first condition, the lock is to be held for a short duration and hence “Spinlock” will be the best option for the processes. As the spinlock mechanism locks the threads for shortest possible time and do not go into long looped mechanisms. </p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>In second condition, the lock is to be held for a long duration and hence in this scenario “Mutex Lock” will be the best choice. As Mutex locks may sometimes undergo long time duration and are far apart from spinlock’s short duration holds.</p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p>In third condition, the thread may be put to sleep while holding the lock; and hence once again a “Mutex Lock” would be the better one among two available lock choices. The main reason behind this is spinlocks do not allow threads to go in sleep mode, while holding the lock. </p></div>

@@ -1,0 +1,6 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>Yes, once upon a time, UNIX systems used disk-layout optimizations based on the rotation position of disk data, but present implementations, including Linux, simply optimize for sequential data access because the performance characteristics of disk may changed substantially in latest years, many enhancements introduced to increase the maximum bandwidth that can be achieved on a disk.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>The main <b>hardware characteristic</b> takes an advantage in sequential access:</p> <p>In present systems have capable of high bandwidth and a long pipeline is there between the operating system and disk’s read-write head. Here one local control is there, through that I/O request passed over bus logic to disk drive and then internally to the disk, the controller can accesses cache data and optimize the order of I/O requests.</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>The rotational optimization is not useful for longer period because an operating system has burden to search the position of the data on such disks, capable of understand the complete geometry. To determine the optimal scheduling of I/O’s here only disk internal logic available.</p></div>

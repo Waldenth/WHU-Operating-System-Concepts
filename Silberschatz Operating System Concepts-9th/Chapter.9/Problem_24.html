@@ -1,0 +1,24 @@
+<h2>Step-1</h2>
+<div class="answer"> <p> <b>Page replacement algorithms</b> </p> <p>The least-frequently used algorithm for page replacement replaces pages on the basis of a count for each page. The count reveals the number of times a page is accessed. When a page is to be replaced, the one with least count is replaced. This algorithm performs better than least recently used when a page is accessed quite frequently though not recently.</p> <p>For example, consider a memory system with capable of holding four pages. Further consider the sequence<img src="https://media.cheggcdn.com/study/fd3/fd38a69d-184e-406a-badd-3d52539456e5/5644-9-25E-i1.png" />.</p> <p>Initially the memory is empty so when 1 is needed, it is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/8a1/8a1ca64b-0678-42c2-9460-a626a15667de/5644-9-25E-i2.png" alt="5644-9-25E-1" /> </p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>The next reference is also 1 therefore it is accessed without any replacement and the count for page one is incremented.</p> <p>Then, 2 is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/17b/17bda05c-5b57-4424-979c-5d20f2859b93/5644-9-25E-i3.png" alt="5644-9-25E-2" /> </p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>Next, 3 is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/e20/e200aaeb-c892-40db-b3ea-36580947ea6e/5644-9-25E-i4.png" alt="5644-9-25E-3" /> </p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p>Next, 4 is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/7f9/7f92255f-3d36-409a-abb2-9b609e53bf87/5644-9-25E-i5.png" alt="5644-9-25E-4" /> </p> </div>
+<h2>Step-5</h2>
+<div class="answer"> <p>Now, when the 5 is needed, the count of all pages is examined and except 1, any of the other pages can be replaced because the count of 1 is greater than the count of others. Suppose, 2 is replaced as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/4c7/4c7ed12d-0970-42c5-9eed-742ece29bae5/5644-9-25E-i6.png" alt="5644-9-25E-5" /> </p> </div>
+<h2>Step-6</h2>
+<div class="answer"> <p>This is different from least recently used (LRU) page replacement algorithm. In LRU, 1 would have been replaced.</p> </div>
+<h2>Step-7</h2>
+<div class="answer"> <p>Now, the according to the sequence, page 1 is to be accessed again. And since it wasn’t replaced there would be no page fault. However, LRU would have resulted in a page-fault here.</p> <p>Thus, least frequently used algorithm performs better than the least recently used algorithm for the given sequence.</p> <p>Now, examine a case where least recently used algorithm would perform better than least frequently used algorithm. The LRU associates a time with each page in the memory and the ones with the greatest value are replaced.</p> <p>Consider the sequence<img src="https://media.cheggcdn.com/study/8ff/8ff736f8-f68f-414c-8d4e-4f0682c33b6c/5644-9-25E-i7.png" />.</p> <p>Initially the memory is empty so when 1 is needed, it is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/3dd/3dd1c11b-9a8d-4d0c-a408-467a16725e0f/5644-9-25E-i8.png" alt="5644-9-25E-1" /> </p> </div>
+<h2>Step-8</h2>
+<div class="answer"> <p>The next reference is also 1 therefore it is accessed without any replacement.</p> <p>Then, 2 is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/272/27280fa8-1257-49ef-ae41-3549e586808a/5644-9-25E-i9.png" alt="5644-9-25E-2" /> </p> </div>
+<h2>Step-9</h2>
+<div class="answer"> <p>Next, 3 is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/966/966c13f8-aa41-47a0-b4d2-b85d7b75b866/5644-9-25E-i10.png" alt="5644-9-25E-3" /> </p> </div>
+<h2>Step-10</h2>
+<div class="answer"> <p>Next, 4 is brought into the memory as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/855/8555d5c0-b47e-4d2a-a185-27748a3d95b1/5644-9-25E-i11.png" alt="5644-9-25E-4" /> </p> </div>
+<h2>Step-11</h2>
+<div class="answer"> <p>Now, when the 5 is needed, the page least recently used should be replaced. Thus, 1 is replaced as shown below:</p> <p> <img src="https://media.cheggcdn.com/study/7d5/7d547152-c5ce-4ed4-88dc-48cc5e2c2c1c/5644-9-25E-i12.png" alt="5644-9-25E-10" /> </p> </div>
+<h2>Step-12</h2>
+<div class="answer"> <p>Next page in the sequence is 2 which is already present in the memory thus no page fault occurs. If least frequently used algorithm was used instead of least recently used algorithm, 2 would have been replaced and a page fault would have occurred.</p> <p>Thus, in this case, least recently used algorithm performs better than least frequently used algorithm.</p></div>

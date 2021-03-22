@@ -1,0 +1,8 @@
+<h2>Step-1</h2>
+<div class="answer"> <p> <b>CFS</b> stands for Completely Fair Scheduler and it is default linux scheduling algorithm. Priority value is not provided directly by the CFS scheduler but it maintain the virtual run time of each task by pre-task variable vruntime which provide the runtime of each process. </p> <p>Lower nice value shows higher priority and higher nice value shows the lower priority. A higher priority process is always assigned more CPU time than a low priority process.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>When both tasks A and B are CPU bound and nice value of A and B is given as -5 and +5 respectively then vruntime will be small for task A than task B as -5 for task A indicates a higher priority than task B.</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p> </p> <p>When task A is I/O bound and B is CPU bound, the vruntime will be smaller for task A than task B because task A has high priority and I/O bound process will run shortly before blocking for another I/O. </p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p> </p> <p>When task A is CPU bound and task B is I/O bound the vruntime of task A will be less than value of vruntime of task B as CPU bound process will consume its time period whenever it will run on processor and it can be preempted by I/O bound. </p></div>

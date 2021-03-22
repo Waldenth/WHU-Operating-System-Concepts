@@ -1,0 +1,6 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>a) Free – space allocation methods also influence the efficiency of disk-space use, the performance of the file system, and reliability of secondary storage. If the pointer to the free-space list is lost, the system can reconstruct the list by implementing any technique like bit-vector, linked list, etc. But the disadvantage is previously freed space may not be considered completely.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>b) If the file is present at the pointer in any of the first 12 pointers, as they point to direct blocks no extra I/O operations are required except for reading.</p> <p>If the file is at the pointer pointing to single indirect block, then I/O operations to find the direct block and to read file are needed.</p> <p>If the file is at the pointer pointing to double indirect block, then 3 I/O operations are required.</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>c) UNIX also provides unified buffer cache. Firstly to use memory mapping secondly use of system calls to read() and write(). Due to this caching, disk latency time will be reduced as well as if any failure in the main memory occurs the pointer as it is cached won’t be lost.</p></div>

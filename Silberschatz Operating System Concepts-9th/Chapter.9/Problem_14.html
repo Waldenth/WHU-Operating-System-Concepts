@@ -1,0 +1,8 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>2481-9-27E SA: 8683</p> <p> SR: 6376</p> <p> <b>a) TLB miss with no page fault</b>: <b>Possible.</b></p> <p> <b> </b>TLB did not contain this page table entry but it did exist in the page table and the entry was valid.</p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p> <b>b) TLB miss and page fault</b>: <b>Possible.</b></p> <p> TLB did not contain this page table entry so it asked the page table but the entry was either invalid or out on disk.</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p> <b>c) TLB hit and no page fault</b>: <b>Possible</b>.</p> <p> TLB contained that entry and it was valid and in memory.</p> </div>
+<h2>Step-4</h2>
+<div class="answer"> <p> <b>d) TLB hit and page fault</b>: <b>Impossible.</b></p> <p> It is impossible because it cannot have a TLB entry if page is not in memory. Operating system updates the page tables and TLB when a page in the memory has been flushed out to disk.</p></div>

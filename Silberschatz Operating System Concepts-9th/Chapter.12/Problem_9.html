@@ -1,0 +1,6 @@
+<h2>Step-1</h2>
+<div class="answer"> <p>a) Total amount of space needed for a file is known in advance, pre-allocation may be inefficient. A file that will grow slowly over a long period must be allocated enough space for its final size, enough though must of that space will be unused for a long time. The file therefore has a large amount of <b>internal fragmentation</b>. </p> <p>Advantage is for sequential access, the file system remembers the disk address of the last block referenced and when necessary, reads the next block. For direct access to block <i>i</i> of a file that starts at block <i>b</i>, we can immediately access block <i>b</i>+<i>i</i>. </p> </div>
+<h2>Step-2</h2>
+<div class="answer"> <p>b) Dynamic storage allocation involves how to satisfy, a request of size <i>n </i>(process size) from a list of free holes. Advantage is there will be no internal fragmentation. But first-fit and best-fit strategies used for selecting a free hole suffers from <b>external fragmentation</b>.</p> </div>
+<h2>Step-3</h2>
+<div class="answer"> <p>c) External fragmentation becomes a problem when largest contiguous chunks are insufficient for a request; storage is fragmented into a number of holes, no one of which is large enough to store the data. Depending on total amount of disk storage and the average file size.</p></div>
